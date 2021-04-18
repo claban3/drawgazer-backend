@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "drawgazer-backend",
     "public": "public",
     "ignore": [
       "firebase.json",
