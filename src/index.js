@@ -14,19 +14,11 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIO(server, {cors: {origin: "*" }});
 
-
 const { 
   v1: uuidv1,
 } = require('uuid');
 
 const clients = {};
-
-
-
-{/* <script src="/__/firebase/8.4.1/firebase-app.js"></script>
-<script src="/__/firebase/8.4.1/firebase-analytics.js"></script>
-<script src="/__/firebase/init.js"></script>  */}
-
 
 function initiateShareCanvas(requestData, responseCallback) {
     var srcId = requestData.srcId;
